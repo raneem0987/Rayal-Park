@@ -26,9 +26,7 @@ This is a solution to the [Product list with cart challenge on Frontend Mentor](
 
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/flexbox-grid-ajax-javascipt-LSheKoI_Wa)
-- Live Site URL: [qr-page Demo](https://raneem0987.github.io/product-list-cart/)
+- Live Site URL: [Ray-Park-page Demo](https://raneem0987.github.io/Rayal-Park/)
 
 ## My process
 
