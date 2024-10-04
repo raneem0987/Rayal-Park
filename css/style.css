@@ -55,7 +55,7 @@
   color: var(--text-light);
 }
 
-.btn {
+.button {
   padding: 0.75rem 1.5rem;
   outline: none;
   border: none;
@@ -68,7 +68,7 @@
   transition: 0.3s;
 }
 
-.btn:hover {
+.button:hover {
   background-color: var(--primary-dark-color);
 }
 
@@ -111,7 +111,7 @@ nav {
   z-index: 9;
 }
 
-.nav-bar {
+.navbar {
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -120,7 +120,7 @@ nav {
   background-color: var(--primary-color);
 }
 
-.nav-menu-btn {
+.menu-button {
   font-size: 1.5rem;
   color: var(--secondary-light-color);
   cursor: pointer;
@@ -153,7 +153,7 @@ nav {
   transition: 0.3s;
 }
 
-.nav-btn {
+.nav-button {
   display: none;
 }
 
@@ -237,7 +237,7 @@ nav {
   gap: 2rem;
 }
 
-.about-image img {
+.contain-image img {
   max-width: 450px;
   margin: auto;
   border-radius: 5px;
@@ -418,7 +418,7 @@ nav {
   margin-inline: auto;
 }
 
-.explore-bg {
+.explore-bag {
   margin-top: 4rem;
   padding-block: 3rem;
   display: grid;
@@ -453,13 +453,13 @@ nav {
   color: var(--text-dark);
 }
 
-.explore-content .btn {
+.explore-content .button {
   color: var(--primary-color);
   background-color: var(--secondary-light-color);
   border: 1px solid var(--primary-color);
 }
 
-.explore-content .btn:hover {
+.explore-content .button:hover {
   color: var(--secondary-light-color);
   background-color: var(--primary-color);
 }
@@ -473,11 +473,11 @@ nav {
   gap: 4rem 2rem;
 }
 
-.footer-col .section-description {
+.footer-call .section-description {
   margin-block: 2rem;
 }
 
-.footer-col h4 {
+.footer-call h4 {
   margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: 500;
@@ -543,12 +543,12 @@ nav {
     justify-content: space-between;
   }
 
-  .nav-bar {
+  .navbar {
     padding: 0;
     background-color: transparent;
   }
 
-  .nav-menu-btn {
+  .menu-button {
     display: none;
   }
 
@@ -561,7 +561,7 @@ nav {
     background-color: transparent;
   }
 
-  .nav-btn {
+  .nav-button {
     display: block;
   }
 
