@@ -120,6 +120,20 @@ nav {
   background-color: var(--primary-color);
 }
 
+.navbar.sticky {
+  position: sticky;
+  top: 0;
+  left: 0px;
+  animation: fadeIn .5s linear;
+  background-color: #656565;
+  z-index: 1000;
+  position: fixed;
+  /* margin: 0px; */
+  margin-top: 0;
+  transition: all 1s linear;
+  width: 100%;
+}
+
 .menu-button {
   font-size: 1.5rem;
   color: var(--secondary-light-color);
@@ -243,7 +257,7 @@ nav {
   border-radius: 5px;
 }
 
-.room-grid {
+.rooms {
   margin-top: 4rem;
   display: grid;
   gap: 1rem;
@@ -517,15 +531,8 @@ nav {
   opacity: 1;
 }
 
-.footer-bar {
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: var(--text-light);
-  text-align: center;
-}
-
 @media (width > 576px) {
-  .room-grid {
+  .rooms {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -586,7 +593,7 @@ nav {
     align-items: center;
   }
 
-  .room-grid {
+  .rooms {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -600,7 +607,7 @@ nav {
 }
 
 @media (width > 1024px) {
-  .room-grid {
+  .rooms {
     gap: 2rem;
   }
 }
