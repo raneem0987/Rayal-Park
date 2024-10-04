@@ -1,66 +1,70 @@
 const menu = document.getElementById("menu-button");
 const navLinks = document.getElementById("nav-links");
-const menuIcon = menu.querySelector("i");
+const menuicons = menu.querySelector("i");
 
 menu.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 
-  const isOpen = navLinks.classList.contains("open");
-  menuIcon.setAttribute("class", isOpen ? "close-line" : "menu-line");
+  const Open = navLinks.classList.contains("open");
+  menuicons.setAttribute("class", Open ? "close-line" : "menu-line");
 });
 
 navLinks.addEventListener("click", () => {
   navLinks.classList.remove("open");
-  menuIcon.setAttribute("class", "menu-line");
+  menuicons.setAttribute("class", "menu-line");
 });
 
-const scrollRevealOption = {
+const scrolloption = {
   distance: "50px",
   origin: "bottom",
   duration: 1000,
 };
 
+ScrollReveal().reveal("header", {
+  ...scrolloption,
+});
+
 ScrollReveal().reveal(".header-container p", {
-  ...scrollRevealOption,
+  ...scrolloption,
 });
 
 ScrollReveal().reveal(".header-container h1", {
-  ...scrollRevealOption,
+  ...scrolloption,
   delay: 500,
 });
 
 ScrollReveal().reveal(".contain-image img", {
-  ...scrollRevealOption,
+  ...scrolloption,
   origin: "left",
 });
 
 ScrollReveal().reveal(".about-content .section-subheader", {
-  ...scrollRevealOption,
+  ...scrolloption,
   delay: 500,
 });
 
 ScrollReveal().reveal(".about-content .section-header", {
-  ...scrollRevealOption,
+  ...scrolloption,
   delay: 1000,
 });
 
 ScrollReveal().reveal(".about-content .section-description", {
-  ...scrollRevealOption,
+  ...scrolloption,
   delay: 1500,
 });
 
 ScrollReveal().reveal(".about-button", {
-  ...scrollRevealOption,
+  ...scrolloption,
   delay: 2000,
 });
 
 ScrollReveal().reveal(".room-card", {
-  ...scrollRevealOption,
+  ...scrolloption,
   interval: 500,
 });
 
 ScrollReveal().reveal(".service-list li", {
-  ...scrollRevealOption,
+  ...scrolloption,
   interval: 500,
   origin: "right",
 });
