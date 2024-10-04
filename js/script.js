@@ -22,6 +22,9 @@ const scrolloption = {
 
 ScrollReveal().reveal("header", {
   ...scrolloption,
+  distance: "50px",
+  origin: "top",
+  delay: 500,
 });
 
 ScrollReveal().reveal(".header-container p", {
